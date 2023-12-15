@@ -1,0 +1,9 @@
+variable "filename" {
+default="/home/ubuntu/terraform-local/terraform-local/terraform-variables/devops-automated.txt"
+}
+variable "content" {
+default="variables"
+}
+
+variable "devops_op_trainer" {}
+~                              
