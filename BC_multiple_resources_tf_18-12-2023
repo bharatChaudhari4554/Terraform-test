@@ -1,0 +1,14 @@
+resource "local_file" "devops" {
+filename="/home/ubuntu/terraform-local/terraform-local/automated.txt"
+content="i love devops"
+}
+
+resource "random_string" "rand-str"{
+length =16
+special=true
+override_special="!@#$%^&*()<>"
+}
+output "rand-str" {
+value = random_string.rand-str[*].result
+
+}
