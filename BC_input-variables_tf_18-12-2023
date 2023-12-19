@@ -1,0 +1,21 @@
+#main_file
+resource "local_file" "devops"{
+filename="/home/ubuntu/terraform-local/terraform-variables/devops.txt"
+content="Devops is test"
+}
+variable "content"{
+default=" auto"
+}
+
+
+
+#variable file
+variable "filename"{
+default="/home/ubuntu/terraform-local/terraform-variables/devops.txt"
+}
+
+resource "local_file" "var"{
+filename= var.filename
+content=var.content
+}
+
