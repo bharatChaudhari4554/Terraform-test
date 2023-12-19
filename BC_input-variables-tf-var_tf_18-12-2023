@@ -1,0 +1,8 @@
+#main file
+variable "devops_test" { }
+
+output "devops_test" {
+value=var_devops_test
+}
+
+export TF_VAR_devops_test=terraform4554
